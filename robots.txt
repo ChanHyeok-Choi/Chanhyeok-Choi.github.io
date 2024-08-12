@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ChanHyeok-Choi.github.io/sitemap.xml
+Sitemap: https://ChanHyeok-Choi.github.io/about/./sitemap.xml
