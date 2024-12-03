@@ -49,9 +49,9 @@ rss_icon: true
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
-socials_in_search: true
-bib_search: true
+search_enabled: false
+socials_in_search: false
+bib_search: false
 
 # Dimensions
 max_width: 930px
@@ -113,7 +113,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Email is the best way to reach me.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -134,8 +134,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Multimodal Space # blog_name will be displayed in your blog page
-blog_description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A blog about multi-modal generative models and their applications.
+blog_description:
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -249,11 +248,10 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - _pages/blog.md
-  - _pages/dropdown.md
-  - _pages/profiles.md
-  - _pages/projects.md
-  - _pages/publications.md
+  - _pages/dropdown.md  # what I add
+  - _pages/profiles.md  # what I add
+  - _pages/projects.md  # what I add
+  - _pages/publications.md  # what I add
 keep_files:
   - CNAME
   - .nojekyll
