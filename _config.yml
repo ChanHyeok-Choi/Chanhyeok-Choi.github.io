@@ -312,8 +312,8 @@ display_categories: ["multimodal"] # these categories will be displayed on the f
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Choi]
+  first_name: [Chanhyuk]
 
   style: apa
   locale: en
