@@ -2,6 +2,10 @@
  * CV shared styles
  *****************************/
 
+div.cv-container {
+  max-width: 800px;
+}
+
 div.container-link-button {
   margin-right: 0.5rem;
 }
@@ -60,7 +64,7 @@ i.icondepartment {
 }
 
 table.institution {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 td.department {

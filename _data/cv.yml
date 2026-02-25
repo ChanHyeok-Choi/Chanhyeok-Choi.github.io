@@ -12,11 +12,15 @@
   type: time_table
   contents:
     - title: M.S. in Artificial Intelligence
-      institution: Ulsan National Institute of Science and Technology, South Korea
+      institution: Ulsan National Institute of Science and Technology
       year: 2025 - present
+      description:
+        - (Advisor) Prof. Taehwan Kim
     - title: B.S. in Computer Science Engineering
-      institution: Ulsan National Institute of Science and Technology, South Korea
+      institution: Ulsan National Institute of Science and Technology
       year: 2018 - 2025
+      description:
+        - (GPA) 3.71 / 4.3, (Major GPA) 3.82 / 4.3
 
 - title: Experience
   type: time_table
@@ -25,8 +29,8 @@
       institution: NextAI Team in AI Center @ CJ OliveNetworks
       year: 2023 - 2024
       description:
-        - Conducted research on stable diffusion models that could synthesize a preview of K‑drama based on a summarized scenario <a href="https://drive.google.com/file/d/13QWq5ij62ExAtHXXPc7rYE-HTMv2gLMb/view?usp=sharing" target="_blank">[Preview]</a>
-        - Developed a data collection pipeline that extracts high‑quality images from highlight scenes in K‑dramas
+        - Conducted research on a stable diffusion model that could synthesize a preview of K‑drama based on a summarized scenario <a href="https://drive.google.com/file/d/13QWq5ij62ExAtHXXPc7rYE-HTMv2gLMb/view?usp=sharing" target="_blank">[Preview]</a>
+        - (Advisior) Ph.D. Byung-Hak Kim
     - title: Undergraduate Researcher
       institution: ShapeLab @ UNIST
       year: 2023
@@ -34,7 +38,7 @@
         - Developed a deep learning strategy to address Age Prediction and Alzheimer’s Disease Classification based on <a href="https://ieeexplore.ieee.org/document/9759394" target="_blank">SPHARM‑Net</a>.
         - (Advisior) Prof. Ilwoo Lyu
     - title: Undergraduate Researcher
-      institution: Lait @ UNIST
+      institution: AICP @ UNIST
       year: 2022
       description:
         - Conducted research on GAN manipulation using user inputs, such as sketch and text <a href="https://drive.google.com/file/d/1ygls_NfX0j0ooh1oH73CF3lAvsdWjf-o/view?usp=sharing" target="_blank">[Poster]</a>.
@@ -53,7 +57,7 @@
   type: time_table
   contents:
     - title: Missing Semester Instructor
-      institution: UNIST, South Korea
+      institution: Ulsan National Institute of Science and Technology
       year: 2023
       description:
         - Teaching CS skills to sophomore students with <a href="https://missing.csail.mit.edu/" target="_blank">MIT Missing Semester curriculum</a>. <a href="https://drive.google.com/drive/folders/1q-etfFIk_nQD7h6hC74dGz4p49EEWAS7?usp=sharing" target="_blank">[Drive]</a>
@@ -70,5 +74,4 @@
   contents:
     - year: 2022
       items:
-        - OCR AI Learning Data Hackathon <a href="https://drive.google.com/file/d/1kG6IR3JRcAiwCVvASqBXXk0IDSQe6Lv0/view?usp=sharing" target="_blank">[Prize]</a>
-        - Finalist (Top 10)
+        - OCR AI Data Hackathon Finalist (Top 10) <a href="https://drive.google.com/file/d/1kG6IR3JRcAiwCVvASqBXXk0IDSQe6Lv0/view?usp=sharing" target="_blank">[Prize]</a>

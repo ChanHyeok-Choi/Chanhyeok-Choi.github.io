@@ -4,5 +4,5 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: /assets/pdf/CV_Chanhyuk.pdf
+cv_pdf: CV_Chanhyuk.pdf
 ---
