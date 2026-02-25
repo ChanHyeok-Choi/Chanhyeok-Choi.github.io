@@ -26,7 +26,7 @@
   type: time_table
   contents:
     - title: Research Intern
-      institution: NextAI Team in AI Center @ CJ OliveNetworks
+      institution: AI Center @ CJ OliveNetworks
       year: 2023 - 2024
       description:
         - Conducted research on a stable diffusion model that could synthesize a preview of K‑drama based on a summarized scenario <a href="https://drive.google.com/file/d/13QWq5ij62ExAtHXXPc7rYE-HTMv2gLMb/view?usp=sharing" target="_blank">[Preview]</a>
