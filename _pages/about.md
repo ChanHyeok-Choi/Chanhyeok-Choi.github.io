@@ -16,6 +16,6 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 ---
 
-I am currently an M.S. student advised by Prof. [Taehwan Kim](https://sites.google.com/view/taehwankim), in [IMML lab](https://sites.google.com/view/mvllab/home?authuser=0) at [UNIST AIGS](https://aigs.unist.ac.kr/). Previously, I received my B.S. in Computer Science Engineering from [Ulsan National Institute of Science and Technology (UNIST)](https://www.unist.ac.kr/).
+I am currently a M.S. student advised by Prof. [Taehwan Kim](https://sites.google.com/view/taehwankim), in [IMML lab](https://sites.google.com/view/mvllab/home?authuser=0) at [UNIST AIGS](https://aigs.unist.ac.kr/). Previously, I received my B.S. in Computer Science Engineering from [Ulsan National Institute of Science and Technology (UNIST)](https://www.unist.ac.kr/).
 
 My research aims to develop effective machine learning methods in multimodal representation spaces. I am passionate about advancing scientific knowledge by leveraging multimodal data to build AI systems with deeper and more robust understanding.
