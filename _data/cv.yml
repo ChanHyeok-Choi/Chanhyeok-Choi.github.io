@@ -30,19 +30,19 @@
       year: 2023 - 2024
       description:
         - Conducted research on a stable diffusion model that could synthesize a preview of K‑drama based on a summarized scenario <a href="https://drive.google.com/file/d/13QWq5ij62ExAtHXXPc7rYE-HTMv2gLMb/view?usp=sharing" target="_blank">[Preview]</a>
-        - (Advisior) Ph.D. Byung-Hak Kim
+        - (Advisor) Ph.D. Byung-Hak Kim
     - title: Undergraduate Researcher
       institution: ShapeLab @ UNIST
       year: 2023
       description:
         - Developed a deep learning strategy to address Age Prediction and Alzheimer’s Disease Classification based on <a href="https://ieeexplore.ieee.org/document/9759394" target="_blank">SPHARM‑Net</a>.
-        - (Advisior) Prof. Ilwoo Lyu
+        - (Advisor) Prof. Ilwoo Lyu
     - title: Undergraduate Researcher
       institution: AICP @ UNIST
-      year: 2022
+      year: 2021
       description:
         - Conducted research on GAN manipulation using user inputs, such as sketch and text <a href="https://drive.google.com/file/d/1ygls_NfX0j0ooh1oH73CF3lAvsdWjf-o/view?usp=sharing" target="_blank">[Poster]</a>.
-        - (Advisior) Prof. Jaejun Yoo
+        - (Advisor) Prof. Jaejun Yoo
 
 - title: Certificate
   type: time_table
@@ -72,6 +72,6 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2022
+    - year: 2021
       items:
         - OCR AI Data Hackathon Finalist (Top 10) <a href="https://drive.google.com/file/d/1kG6IR3JRcAiwCVvASqBXXk0IDSQe6Lv0/view?usp=sharing" target="_blank">[Prize]</a>
