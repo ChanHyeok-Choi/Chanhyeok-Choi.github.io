@@ -66,7 +66,7 @@ body {
 
 .method-caption {
   font-size: 0.92rem;
-  color: #555;
+  color: #363636;
   width: 70%;
   max-width: 720px;
   margin: 0 auto;
@@ -181,14 +181,15 @@ body {
 }
 
 .bibtex-block pre {
-  font-family: "Courier New", monospace;
-  font-size: 13px;
-  color: #363636;
+  font-family: "Courier New", monospace !important;
+  font-size: 13px !important;
+  color: #363636 !important;
   overflow-x: auto;
   line-height: 1.7;
   white-space: pre;
-  background: transparent;
-  padding: 0;
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
 }
 
 .copy-btn {
