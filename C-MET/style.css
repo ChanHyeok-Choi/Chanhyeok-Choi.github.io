@@ -1,16 +1,16 @@
 /* ── Base ────────────────────────────────── */
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 /* ── Hero / Title ────────────────────────── */
 .publication-title {
-  font-family: 'Google Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
 }
 
 .publication-authors {
-  font-family: 'Google Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .publication-authors a {
@@ -28,13 +28,13 @@ body {
 .publication-venue {
   color: #555;
   font-weight: bold;
-  font-family: 'Google Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 1.1rem;
 }
 
 /* ── Teaser ──────────────────────────────── */
 .teaser {
-  font-family: 'Google Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .teaser-img {
@@ -94,7 +94,9 @@ body {
   text-align: center;
 }
 
-.five-col { grid-template-columns: repeat(5, 1fr); }
+.five-col {
+  grid-template-columns: repeat(5, 1fr);
+}
 
 .label-chip {
   padding: 3px 6px;
@@ -120,14 +122,30 @@ body {
   margin-bottom: 1rem;
 }
 
-.eight-col { grid-template-columns: repeat(4, 1fr); }
-.seven-col { grid-template-columns: repeat(4, 1fr); }
+.eight-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+.seven-col {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 @media (max-width: 768px) {
-  .eight-col, .seven-col { grid-template-columns: repeat(2, 1fr); }
-  .teaser-img, .method-img { width: 100%; }
-  .teaser-caption, .method-caption { width: 100%; }
-  .five-col { grid-template-columns: repeat(3, 1fr); font-size: 10px; }
+  .eight-col,
+  .seven-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .teaser-img,
+  .method-img {
+    width: 100%;
+  }
+  .teaser-caption,
+  .method-caption {
+    width: 100%;
+  }
+  .five-col {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 10px;
+  }
 }
 
 .video-card {
@@ -163,7 +181,7 @@ body {
 }
 
 .bibtex-block pre {
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   font-size: 13px;
   color: #363636;
   overflow-x: auto;
@@ -185,7 +203,9 @@ body {
   background: #fff;
   color: #555;
   cursor: pointer;
-  transition: border-color .2s, color .2s;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
 }
 
 .copy-btn:hover {
