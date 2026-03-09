@@ -1,378 +1,366 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>C-MET: Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video</title>
-  <meta name="description" content="C-MET: Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video. CVPR 2026." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>C-MET: Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video</title>
+    <meta name="description" content="C-MET: Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video. CVPR 2026." />
 
-  <!-- Bulma -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ── HERO ───────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video</h1>
 
-<!-- ── HERO ───────────────────────────────────────────── -->
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=0M03qmEAAAAJ&hl=en" target="_blank">Chanhyuk Choi</a>,
+                </span>
+                <span class="author-block"> <a href="#" target="_blank">Taesoo Kim</a>, </span>
+                <span class="author-block"> <a href="#" target="_blank">Donggyu Lee</a>, </span>
+                <span class="author-block"> <a href="#" target="_blank">Siyeol Jung</a>, </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=5dGWexcAAAAJ&hl=en&oi=sra" target="_blank">Taehwan Kim</a>
+                </span>
+              </div>
 
-          <h1 class="title is-1 publication-title">
-            Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video
-          </h1>
+              <div class="is-size-5 publication-authors" style="margin-top: 0.5rem">
+                <span class="author-block">Ulsan National Institute of Science and Technology (UNIST)</span>
+              </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=0M03qmEAAAAJ&hl=en" target="_blank">Chanhyuk Choi</a>,
-            </span>
-            <span class="author-block">
-              <a href="#" target="_blank">Taesoo Kim</a>,
-            </span>
-            <span class="author-block">
-              <a href="#" target="_blank">Donggyu Lee</a>,
-            </span>
-            <span class="author-block">
-              <a href="#" target="_blank">Siyeol Jung</a>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=5dGWexcAAAAJ&hl=en&oi=sra" target="_blank">Taehwan Kim</a>
-            </span>
-          </div>
+              <div class="publication-venue" style="margin-top: 0.75rem">
+                <span>CVPR 2026</span>
+              </div>
 
-          <div class="is-size-5 publication-authors" style="margin-top: 0.5rem;">
-            <span class="author-block">Ulsan National Institute of Science and Technology (UNIST)</span>
-          </div>
-
-          <div class="publication-venue" style="margin-top: 0.75rem;">
-            <span>CVPR 2026</span>
-          </div>
-
-          <!-- Buttons -->
-          <div class="column has-text-centered" style="margin-top: 1.5rem;">
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="https://github.com/ChanHyeok-Choi/C-MET" target="_blank"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fab fa-github"></i></span>
-                  <span>Code</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="ai ai-arxiv"></i></span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a class="external-link button is-normal is-rounded is-dark" disabled
-                   style="opacity:0.5; cursor:not-allowed; pointer-events:none;">
-                  <span class="icon"><i class="fas fa-film"></i></span>
-                  <span>Supplementary (coming soon)</span>
-                </a>
-              </span>
+              <!-- Buttons -->
+              <div class="column has-text-centered" style="margin-top: 1.5rem">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://github.com/ChanHyeok-Choi/C-MET" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fab fa-github"></i></span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="ai ai-arxiv"></i></span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a
+                      class="external-link button is-normal is-rounded is-dark"
+                      disabled
+                      style="opacity: 0.5; cursor: not-allowed; pointer-events: none"
+                    >
+                      <span class="icon"><i class="fas fa-film"></i></span>
+                      <span>Supplementary (coming soon)</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ── TEASER IMAGE ───────────────────────────────────── -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body has-text-centered">
-      <img src="asset/teaser.png" alt="C-MET Teaser" class="teaser-img" />
-      <p class="teaser-caption">
-        Comparison between our method and baseline approaches. Identity, lip, and pose are taken from a neutral video,
-        while the emotion source is provided from MELD (dialogue 5, utterance 8). From top to bottom: ours (C-MET), the
-        label-based method (EAT), the existing audio-based method (FLOAT), and the image-based method (EDTalk).
-        Our results better reflect the target emotional speech (sarcastic), exhibiting a more pronounced widening
-        of the lip corners compared to the baselines.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ── ABSTRACT ──────────────────────────────────────── -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Talking face generation has gained significant attention as a core application of generative models.
-            To enhance the expressiveness and realism of synthesized videos, emotion editing in talking face video
-            plays a crucial role. However, existing approaches often limit expressive flexibility and struggle to
-            generate extended emotions. Label-based methods represent emotions with discrete categories, which fail
-            to capture a wide range of emotions. Audio-based methods can leverage emotionally rich speech
-            signals—and even benefit from expressive text-to-speech (TTS) synthesis—but they fail to express the
-            target emotions because emotions and linguistic contents are entangled in emotional speeches.
-            Image-based methods rely on target reference images to guide emotion transfer, yet they require
-            high-quality frontal views and face challenges in acquiring reference data for extended emotions
-            (e.g., sarcasm). To address these challenges, we propose <strong>Cross-Modal Emotion Transfer (C-MET)</strong>,
-            a novel approach that generates facial expressions based on speeches by modeling emotion semantic vectors
-            between speech and visual feature spaces. C-MET leverages a large-scale pretrained audio encoder and a
-            disentangled facial expression encoder to learn emotion semantic vectors that represent the difference
-            between two different emotional embeddings across modalities. Extensive experiments on the MEAD and
-            CREMA-D datasets demonstrate that our method improves emotion accuracy by <strong>14%</strong> over
-            state-of-the-art methods, while generating expressive talking face videos—even for unseen extended emotions.
+    <!-- ── TEASER IMAGE ───────────────────────────────────── -->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body has-text-centered">
+          <img src="asset/teaser.png" alt="C-MET Teaser" class="teaser-img" />
+          <p class="teaser-caption">
+            Comparison between our method and baseline approaches. Identity, lip, and pose are taken from a neutral video, while the emotion source is
+            provided from MELD (dialogue 5, utterance 8). From top to bottom: ours (C-MET), the label-based method (EAT), the existing audio-based
+            method (FLOAT), and the image-based method (EDTalk). Our results better reflect the target emotional speech (sarcastic), exhibiting a more
+            pronounced widening of the lip corners compared to the baselines.
           </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ── METHOD ────────────────────────────────────────── -->
-<section class="section" style="background:#fafafa;">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full has-text-centered">
-        <h2 class="title is-3">Method Overview</h2>
-        <img src="asset/cmet.png" alt="C-MET Method Overview" class="method-img" />
-        <p class="method-caption content has-text-justified">
-          <strong>Overview of the proposed Cross-Modal Emotion Transfer (C-MET).</strong>
-          (a) We extract input and target embeddings using pretrained audio and visual encoders, and compute
-          the semantic vectors by subtracting the target embeddings from the inputs.
-          (b) During training, we apply contrastive learning between multimodal tokens—both from visual to audio
-          and audio to visual—to align the representation spaces.
-          (c) A multimodal transformer encoder is used to regress the target expression vectors, guided by the
-          speech vectors. The predicted vectors are then added to the input visual embeddings, which are decoded
-          by a pretrained visual decoder to reconstruct the target video from the neutral video.
-        </p>
+    <!-- ── ABSTRACT ──────────────────────────────────────── -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Talking face generation has gained significant attention as a core application of generative models. To enhance the expressiveness and
+                realism of synthesized videos, emotion editing in talking face video plays a crucial role. However, existing approaches often limit
+                expressive flexibility and struggle to generate extended emotions. Label-based methods represent emotions with discrete categories,
+                which fail to capture a wide range of emotions. Audio-based methods can leverage emotionally rich speech signals—and even benefit from
+                expressive text-to-speech (TTS) synthesis—but they fail to express the target emotions because emotions and linguistic contents are
+                entangled in emotional speeches. Image-based methods rely on target reference images to guide emotion transfer, yet they require
+                high-quality frontal views and face challenges in acquiring reference data for extended emotions (e.g., sarcasm). To address these
+                challenges, we propose <strong>Cross-Modal Emotion Transfer (C-MET)</strong>, a novel approach that generates facial expressions based
+                on speeches by modeling emotion semantic vectors between speech and visual feature spaces. C-MET leverages a large-scale pretrained
+                audio encoder and a disentangled facial expression encoder to learn emotion semantic vectors that represent the difference between two
+                different emotional embeddings across modalities. Extensive experiments on the MEAD and CREMA-D datasets demonstrate that our method
+                improves emotion accuracy by <strong>14%</strong> over state-of-the-art methods, while generating expressive talking face videos—even
+                for unseen extended emotions.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ── RESULTS ───────────────────────────────────────── -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
-
-    <!-- Teaser Video -->
-    <h3 class="title is-4">Extended Emotion — Sarcastic</h3>
-    <div class="content">
-      <p>
-        Qualitative comparison for the <strong>sarcastic</strong> extended emotion.
-        All methods share the same neutral input video from
-        <a href="https://github.com/MRzzm/HDTF/tree/main" target="_blank">HDTF</a>.
-        Baselines fail to capture the nuanced sarcastic expression,
-        while C-MET successfully conveys it by leveraging cross-modal semantic vectors.
-      </p>
-    </div>
-    <div class="teaser-video-wrap">
-      <video controls loop muted autoplay playsinline>
-        <source src="https://github.com/user-attachments/assets/eaf14812-b095-47ff-b565-d5e882e6247e" type="video/mp4" />
-      </video>
-      <div class="combined-labels five-col">
-        <span class="label-chip">Input</span>
-        <span class="label-chip label-ours">Ours (audio)</span>
-        <span class="label-chip">EAT (label)</span>
-        <span class="label-chip">FLOAT (audio)</span>
-        <span class="label-chip">EDTalk (images)</span>
+    <!-- ── METHOD ────────────────────────────────────────── -->
+    <section class="section" style="background: #fafafa">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full has-text-centered">
+            <h2 class="title is-3">Method Overview</h2>
+            <img src="asset/cmet.png" alt="C-MET Method Overview" class="method-img" />
+            <p class="method-caption content has-text-justified">
+              <strong>Overview of the proposed Cross-Modal Emotion Transfer (C-MET).</strong>
+              (a) We extract input and target embeddings using pretrained audio and visual encoders, and compute the semantic vectors by subtracting
+              the target embeddings from the inputs. (b) During training, we apply contrastive learning between multimodal tokens—both from visual to
+              audio and audio to visual—to align the representation spaces. (c) A multimodal transformer encoder is used to regress the target
+              expression vectors, guided by the speech vectors. The predicted vectors are then added to the input visual embeddings, which are decoded
+              by a pretrained visual decoder to reconstruct the target video from the neutral video.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <hr style="margin: 3rem 0;" />
+    <!-- ── RESULTS ───────────────────────────────────────── -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
 
-    <!-- Basic Emotions -->
-    <h3 class="title is-4">Basic Emotion Editing</h3>
-    <div class="content">
-      <p>
-        Emotion editing results across all basic emotions using a ChatGPT-4o generated identity image.
-        C-MET produces faithful and expressive facial expressions for each emotion category.
-      </p>
-    </div>
-    <div class="video-grid eight-col">
-      <figure class="video-card">
-        <p class="emotion-label">Neutral</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/65cf3d1a-5256-4399-9c84-49873c8ad9e6" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Angry</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/d91688d2-b5aa-4104-8f3e-69f1a9691ef6" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Contempt</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/0ec3d1ea-e4ec-410f-a3eb-9d88bd320a74" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Disgusted</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/044fd0a5-8cd7-4f48-bd96-9d5c7e2371e5" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Fear</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/04b0f945-0245-40b9-aa45-46d39684d54a" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Happy</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/3bc41be9-f8f0-4e69-aabe-19cadc096e2e" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Sad</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/c97af3b2-da30-462e-a92b-c4ec9436972a" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Surprised</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/46d2efc8-384b-40a2-9dba-fb2ddeb1935c" type="video/mp4" />
-        </video>
-      </figure>
-    </div>
+        <!-- Teaser Video -->
+        <h3 class="title is-4">Extended Emotion — Sarcastic</h3>
+        <div class="content">
+          <p>
+            Qualitative comparison for the <strong>sarcastic</strong> extended emotion. All methods share the same neutral input video from
+            <a href="https://github.com/MRzzm/HDTF/tree/main" target="_blank">HDTF</a>. Baselines fail to capture the nuanced sarcastic expression,
+            while C-MET successfully conveys it by leveraging cross-modal semantic vectors.
+          </p>
+        </div>
+        <div class="teaser-video-wrap">
+          <video controls loop muted autoplay playsinline>
+            <source src="https://github.com/user-attachments/assets/eaf14812-b095-47ff-b565-d5e882e6247e" type="video/mp4" />
+          </video>
+          <div class="combined-labels five-col">
+            <span class="label-chip">Input</span>
+            <span class="label-chip label-ours">Ours (audio)</span>
+            <span class="label-chip">EAT (label)</span>
+            <span class="label-chip">FLOAT (audio)</span>
+            <span class="label-chip">EDTalk (images)</span>
+          </div>
+        </div>
 
-    <hr style="margin: 3rem 0;" />
+        <hr style="margin: 3rem 0" />
 
-    <!-- Extended Emotions -->
-    <h3 class="title is-4">Extended Emotion Editing</h3>
-    <div class="content">
-      <p>
-        Unlike label- or image-based methods, C-MET can generate <strong>unseen extended emotions</strong>
-        by leveraging expressive TTS-derived speeches (Gemini 2.5). Six extended emotions are demonstrated
-        on a ChatGPT-4o generated identity image.
-      </p>
-    </div>
-    <div class="video-grid seven-col">
-      <figure class="video-card">
-        <p class="emotion-label">Neutral</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/48706b60-d9e4-479d-a38e-f5c42583b3e6" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Charismatic</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/b6fb3771-eaf8-4b39-a2a3-1c9130228fb5" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Desirous</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/7f26e1ec-f796-4a54-8e0c-d6d7653beef5" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Empathetic</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/aa0ffbf6-f3f2-4325-999f-204f2a0a77b6" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Envious</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/b819d939-641c-4051-b820-3c6fcb788169" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Romantic</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/3081f756-2f60-44e3-8233-cba23bf59dbb" type="video/mp4" />
-        </video>
-      </figure>
-      <figure class="video-card">
-        <p class="emotion-label">Sarcastic</p>
-        <video controls loop muted playsinline>
-          <source src="https://github.com/user-attachments/assets/c693adc3-92ca-4789-8ea4-4f6055c83502" type="video/mp4" />
-        </video>
-      </figure>
-    </div>
+        <!-- Basic Emotions -->
+        <h3 class="title is-4">Basic Emotion Editing</h3>
+        <div class="content">
+          <p>
+            Emotion editing results across all basic emotions using a ChatGPT-4o generated identity image. C-MET produces faithful and expressive
+            facial expressions for each emotion category.
+          </p>
+        </div>
+        <div class="video-grid eight-col">
+          <figure class="video-card">
+            <p class="emotion-label">Neutral</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/65cf3d1a-5256-4399-9c84-49873c8ad9e6" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Angry</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/d91688d2-b5aa-4104-8f3e-69f1a9691ef6" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Contempt</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/0ec3d1ea-e4ec-410f-a3eb-9d88bd320a74" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Disgusted</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/044fd0a5-8cd7-4f48-bd96-9d5c7e2371e5" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Fear</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/04b0f945-0245-40b9-aa45-46d39684d54a" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Happy</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/3bc41be9-f8f0-4e69-aabe-19cadc096e2e" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Sad</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/c97af3b2-da30-462e-a92b-c4ec9436972a" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Surprised</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/46d2efc8-384b-40a2-9dba-fb2ddeb1935c" type="video/mp4" />
+            </video>
+          </figure>
+        </div>
 
-  </div>
-</section>
+        <hr style="margin: 3rem 0" />
 
-<!-- ── BIBTEX ────────────────────────────────────────── -->
-<section class="section" style="background:#fafafa;" id="BibTeX">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">BibTeX</h2>
-    <div class="bibtex-block">
-      <button class="copy-btn" onclick="copyBibtex(this)">Copy</button>
-      <pre id="bibtex-text">@inproceedings{choi2026cross,
+        <!-- Extended Emotions -->
+        <h3 class="title is-4">Extended Emotion Editing</h3>
+        <div class="content">
+          <p>
+            Unlike label- or image-based methods, C-MET can generate <strong>unseen extended emotions</strong>
+            by leveraging expressive TTS-derived speeches (Gemini 2.5). Six extended emotions are demonstrated on a ChatGPT-4o generated identity
+            image.
+          </p>
+        </div>
+        <div class="video-grid seven-col">
+          <figure class="video-card">
+            <p class="emotion-label">Neutral</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/48706b60-d9e4-479d-a38e-f5c42583b3e6" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Charismatic</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/b6fb3771-eaf8-4b39-a2a3-1c9130228fb5" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Desirous</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/7f26e1ec-f796-4a54-8e0c-d6d7653beef5" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Empathetic</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/aa0ffbf6-f3f2-4325-999f-204f2a0a77b6" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Envious</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/b819d939-641c-4051-b820-3c6fcb788169" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Romantic</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/3081f756-2f60-44e3-8233-cba23bf59dbb" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="video-card">
+            <p class="emotion-label">Sarcastic</p>
+            <video controls loop muted playsinline>
+              <source src="https://github.com/user-attachments/assets/c693adc3-92ca-4789-8ea4-4f6055c83502" type="video/mp4" />
+            </video>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BIBTEX ────────────────────────────────────────── -->
+    <section class="section" style="background: #fafafa" id="BibTeX">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">BibTeX</h2>
+        <div class="bibtex-block">
+          <button class="copy-btn" onclick="copyBibtex(this)">Copy</button>
+          <pre id="bibtex-text">
+@inproceedings{choi2026cross,
   title     = {Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video},
   author    = {Choi, Chanhyuk and Kim, Taesoo and Lee, Donggyu and Jung, Siyeol and Kim, Taehwan},
   booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference},
   year      = {2026}
-}</pre>
-    </div>
-  </div>
-</section>
+}</pre
+          >
+        </div>
+      </div>
+    </section>
 
-<!-- ── ACKNOWLEDGEMENTS ──────────────────────────────── -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3 has-text-centered">Acknowledgements</h2>
+    <!-- ── ACKNOWLEDGEMENTS ──────────────────────────────── -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">Acknowledgements</h2>
+            <div class="content has-text-centered">
+              <p>
+                This work was supported by the Ulsan National Institute of Science and Technology (UNIST). We thank the authors of
+                <a href="https://github.com/ddlBoJack/emotion2vec" target="_blank">emotion2vec</a>,
+                <a href="https://github.com/Dorniwang/PD-FGC-inference" target="_blank">PD-FGC</a>,
+                <a href="https://github.com/AliaksandrSiarohin/video-preprocessing" target="_blank">FOMM</a>,
+                <a href="https://github.com/Weizhi-Zhong/IP_LAP" target="_blank">IP-LAP</a>,
+                <a href="https://github.com/tanshuai0219/EDTalk" target="_blank">EDTalk</a>, and
+                <a href="https://github.com/tonychenxyz/emoknob" target="_blank">EmoKnob</a>
+                for releasing their code and models. This website is adapted from the
+                <a href="https://nerfies.github.io/" target="_blank">Nerfies</a> project page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ────────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="container">
         <div class="content has-text-centered">
           <p>
-            This work was supported by the Ulsan National Institute of Science and Technology (UNIST).
-            We thank the authors of
-            <a href="https://github.com/ddlBoJack/emotion2vec" target="_blank">emotion2vec</a>,
-            <a href="https://github.com/Dorniwang/PD-FGC-inference" target="_blank">PD-FGC</a>,
-            <a href="https://github.com/AliaksandrSiarohin/video-preprocessing" target="_blank">FOMM</a>,
-            <a href="https://github.com/Weizhi-Zhong/IP_LAP" target="_blank">IP-LAP</a>,
-            <a href="https://github.com/tanshuai0219/EDTalk" target="_blank">EDTalk</a>, and
-            <a href="https://github.com/tonychenxyz/emoknob" target="_blank">EmoKnob</a>
-            for releasing their code and models.
-            This website is adapted from the
-            <a href="https://nerfies.github.io/" target="_blank">Nerfies</a> project page.
+            C-MET &mdash; CVPR 2026 &bull;
+            <a href="https://github.com/ChanHyeok-Choi/C-MET" target="_blank">GitHub</a>
           </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- ── FOOTER ────────────────────────────────────────── -->
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        C-MET &mdash; CVPR 2026 &bull;
-        <a href="https://github.com/ChanHyeok-Choi/C-MET" target="_blank">GitHub</a>
-      </p>
-    </div>
-  </div>
-</footer>
-
-<script>
-  function copyBibtex(btn) {
-    const text = document.getElementById('bibtex-text').textContent;
-    navigator.clipboard.writeText(text).then(() => {
-      btn.textContent = 'Copied!';
-      setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
-    });
-  }
-</script>
-</body>
+    <script>
+      function copyBibtex(btn) {
+        const text = document.getElementById("bibtex-text").textContent;
+        navigator.clipboard.writeText(text).then(() => {
+          btn.textContent = "Copied!";
+          setTimeout(() => {
+            btn.textContent = "Copy";
+          }, 2000);
+        });
+      }
+    </script>
+  </body>
 </html>
